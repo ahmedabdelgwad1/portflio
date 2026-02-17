@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Abdelgwad | NLP Engineer & AI Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particles Background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Ahmed<span class="logo-dot">.</span>AI<span
+                    class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge animate-up">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-title animate-up delay-1">
+                <span class="hero-greeting">Hi, I'm</span>
+                <span class="hero-name">Ahmed<br>Abdelgwad</span>
+            </h1>
+            <div class="hero-role animate-up delay-2">
+                <span class="role-line"></span>
+                <span class="typewriter" id="typewriter"></span>
+                <span class="cursor-blink">|</span>
+            </div>
+            <p class="hero-description animate-up delay-3">
+                AI student specializing in <span class="highlight">NLP</span> & <span class="highlight">Deep
+                    Learning</span>,
+                building innovative solutions with LLMs, Transformers & RAG systems.
+            </p>
+            <div class="hero-cta animate-up delay-4">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get in Touch</span>
+                </a>
+            </div>
+            <div class="hero-stats animate-up delay-5">
+                <div class="stat">
+                    <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Courses</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">AI Tools</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual animate-up delay-3">
+            <div class="neural-network" id="neuralNetwork">
+                <svg viewBox="0 0 400 400" class="nn-svg">
+                    <!-- Neural network nodes and connections drawn by JS -->
+                </svg>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Hook Quote -->
+            <div class="about-hook reveal">
+                <div class="hook-icon"><i class="fas fa-quote-left"></i></div>
+                <p class="hook-text">
+                    I don't just build AI models — I engineer systems that <span class="highlight">understand</span>,
+                    <span class="highlight">reason</span>, and <span class="highlight">generate</span> human language.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <!-- Left Column: Story -->
+                <div class="about-text reveal">
+                    <h3 class="about-subtitle">My Journey</h3>
+                    <p class="about-lead">
+                        As a Computer Science & AI student at <span class="highlight">Pharos University</span>,
+                        I discovered my passion at the intersection of language and machines.
+                        Today, I specialize in making AI truly conversational — from fine-tuning
+                        Transformers to building production-ready RAG pipelines.
+                    </p>
+                    <p>
+                        Currently training with the <span class="highlight">Digital Egypt Pioneers Initiative
+                            (DEPI)</span>
+                        on Generative AI, I bring hands-on experience with LLMs, LangChain, and end-to-end
+                        NLP systems. I'm driven by one goal: <strong>turning cutting-edge research into real-world
+                            impact.</strong>
+                    </p>
+                </div>
+
+                <!-- Right Column: What I Do -->
+                <div class="about-what reveal">
+                    <h3 class="about-subtitle">What I Do</h3>
+                    <div class="what-cards">
+                        <div class="what-card">
+                            <div class="what-icon"><i class="fas fa-comments"></i></div>
+                            <div class="what-info">
+                                <h4>NLP & Language Models</h4>
+                                <p>Fine-tuning BERT, GPT & T5 for text understanding, generation, and summarization.</p>
+                            </div>
+                        </div>
+                        <div class="what-card">
+                            <div class="what-icon"><i class="fas fa-database"></i></div>
+                            <div class="what-info">
+                                <h4>RAG Systems</h4>
+                                <p>Building retrieval-augmented pipelines with LangChain, ChromaDB & Gemini API.</p>
+                            </div>
+                        </div>
+                        <div class="what-card">
+                            <div class="what-icon"><i class="fas fa-robot"></i></div>
+                            <div class="what-info">
+                                <h4>AI Integration</h4>
+                                <p>Deploying intelligent agents that combine LLMs, Computer Vision & robotics.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Bar -->
+            <div class="about-info-bar reveal">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div><span class="info-label">Location</span><span class="info-value">Alexandria, Egypt</span></div>
+                </div>
+                <div class="info-divider"></div>
+                <div class="info-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div><span class="info-label">Degree</span><span class="info-value">CS & AI — 2026</span></div>
+                </div>
+                <div class="info-divider"></div>
+                <div class="info-item">
+                    <i class="fas fa-star"></i>
+                    <div><span class="info-label">Grade</span><span class="info-value">Very Good</span></div>
+                </div>
+                <div class="info-divider"></div>
+                <div class="info-item">
+                    <i class="fas fa-language"></i>
+                    <div><span class="info-label">Languages</span><span class="info-value">Arabic · English (B2)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Orbit -->
+            <div class="about-tech-section reveal">
+                <h3 class="tech-title">Tech I Work With</h3>
+                <div class="tech-orbit">
+                    <div class="orbit-center">
+                        <span>AI</span>
+                    </div>
+                    <div class="orbit-ring orbit-ring-1">
+                        <div class="orbit-item" style="--i:0; --total:4"><span>Python</span></div>
+                        <div class="orbit-item" style="--i:1; --total:4"><span>PyTorch</span></div>
+                        <div class="orbit-item" style="--i:2; --total:4"><span>LangChain</span></div>
+                        <div class="orbit-item" style="--i:3; --total:4"><span>HuggingFace</span></div>
+                    </div>
+                    <div class="orbit-ring orbit-ring-2">
+                        <div class="orbit-item" style="--i:0; --total:6"><span>BERT</span></div>
+                        <div class="orbit-item" style="--i:1; --total:6"><span>GPT</span></div>
+                        <div class="orbit-item" style="--i:2; --total:6"><span>T5</span></div>
+                        <div class="orbit-item" style="--i:3; --total:6"><span>RAG</span></div>
+                        <div class="orbit-item" style="--i:4; --total:6"><span>TensorFlow</span></div>
+                        <div class="orbit-item" style="--i:5; --total:6"><span>Scikit</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title">Experience & Courses</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <!-- DEPI -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge">Internship</div>
+                        <h3>Generative AI Professional Track</h3>
+                        <h4>Digital Egypt Pioneers Initiative (DEPI)</h4>
+                        <span class="timeline-date"><i class="fas fa-calendar"></i> Nov 2025 – Present</span>
+                        <ul class="timeline-list">
+                            <li>Selected for a competitive professional track focusing on advanced Generative AI
+                                architectures, including LLMs, GANs, and Hugging Face integration.</li>
+                            <li>Developing expertise in NLP with Attention Models, Deep Learning, and Transfer Learning
+                                to build context-aware AI solutions.</li>
+                            <li>Mastering the full AI lifecycle from Core Math and Data Preprocessing to deploying
+                                Generative AI Capstone Projects.</li>
+                            <li>Collaborating on technical scenarios to solve real-world industry challenges using
+                                Python, PyTorch, and modern AI frameworks.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>LLMs</span><span>GANs</span><span>PyTorch</span><span>HuggingFace</span><span>NLP</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Route IT -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge course-badge">Course</div>
+                        <h3>Advanced NLP Track</h3>
+                        <h4>Route IT Training Center</h4>
+                        <span class="timeline-date"><i class="fas fa-calendar"></i> July 2025 – Nov 2025</span>
+                        <ul class="timeline-list">
+                            <li>Specialized in sequence-to-sequence modeling and modern Transformer architectures (BERT,
+                                GPT, T5).</li>
+                            <li>Hands-on experience in fine-tuning LLMs, implementing Attention mechanisms.</li>
+                            <li>Applied text processing techniques like NER and sentiment analysis.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>BERT</span><span>GPT</span><span>T5</span><span>NER</span><span>Transformers</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- GSkilled -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge course-badge">Course</div>
+                        <h3>Diploma in Machine Learning</h3>
+                        <h4>GSkilled Academy</h4>
+                        <span class="timeline-date"><i class="fas fa-calendar"></i> July 2025 – Mar 2026</span>
+                        <ul class="timeline-list">
+                            <li>Comprehensive curriculum covering Supervised and Unsupervised Learning (XGBoost, SVMs,
+                                PCA).</li>
+                            <li>Focused on model optimization, hyperparameter tuning.</li>
+                            <li>Mastering data science libraries like Scikit-learn, Pandas, and NumPy.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>XGBoost</span><span>SVM</span><span>PCA</span><span>Scikit-learn</span><span>Pandas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-badge-label">Robotics + AI</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Interactive AI Tourist Robot</h3>
+                    <p class="project-subtitle">RoboMuse</p>
+                    <p class="project-description">
+                        Orchestrated the AI module development for an autonomous museum guide,
+                        implementing Large Language Models (LLMs) and RAG systems to facilitate
+                        high-accuracy, context-aware visitor interactions, while integrating
+                        Computer Vision for seamless navigation.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>LLMs</span>
+                        <span>RAG</span>
+                        <span>NLP</span>
+                        <span>Computer Vision</span>
+                        <span>Robotics</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-badge-label">RAG System</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">RAG-based Question Answering System</h3>
+                    <p class="project-description">
+                        Engineered a context-aware QA system leveraging Retrieval-Augmented Generation (RAG)
+                        by integrating Google Gemini API with LangChain and optimizing vector data retrieval
+                        using ChromaDB.
+                    </p>
+                    <div class="project-tech">
+                        <span>LangChain</span>
+                        <span>Gemini API</span>
+                        <span>ChromaDB</span>
+                        <span>Transformers</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-badge-label grad-badge">Graduation Project</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Text Summarization System</h3>
+                    <p class="project-description">
+                        Developed an automated summarization pipeline utilizing BART/T5 Transformer models,
+                        fine-tuned on large datasets to improve fluency and evaluated using ROUGE metrics.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>PyTorch</span>
+                        <span>Hugging Face</span>
+                        <span>BART</span>
+                        <span>T5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-chip">
+                            <i class="fab fa-python"></i> Python
+                            <div class="skill-level" style="--level: 90%"></div>
+                        </div>
+                        <div class="skill-chip">
+                            <i class="fas fa-code"></i> C++
+                            <div class="skill-level" style="--level: 70%"></div>
+                        </div>
+                        <div class="skill-chip">
+                            <i class="fab fa-java"></i> Java
+                            <div class="skill-level" style="--level: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI & NLP</h3>
+                    <div class="skill-items">
+                        <div class="skill-chip">LLMs</div>
+                        <div class="skill-chip">RAG</div>
+                        <div class="skill-chip">Transformers</div>
+                        <div class="skill-chip">BERT</div>
+                        <div class="skill-chip">GPT</div>
+                        <div class="skill-chip">T5</div>
+                        <div class="skill-chip">Deep Learning</div>
+                        <div class="skill-chip">Machine Learning</div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-items">
+                        <div class="skill-chip">PyTorch</div>
+                        <div class="skill-chip">TensorFlow</div>
+                        <div class="skill-chip">Scikit-learn</div>
+                        <div class="skill-chip">LangChain</div>
+                        <div class="skill-chip">Pandas</div>
+                        <div class="skill-chip">NumPy</div>
+                        <div class="skill-chip">Hugging Face</div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Developer Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-chip"><i class="fab fa-git-alt"></i> Git</div>
+                        <div class="skill-chip"><i class="fab fa-github"></i> GitHub</div>
+                        <div class="skill-chip">VS Code</div>
+                        <div class="skill-chip">Google Colab</div>
+                        <div class="skill-chip">Jupyter</div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-icon"><i class="fas fa-microscope"></i></div>
+                    <h3>Specialized Areas</h3>
+                    <div class="skill-items">
+                        <div class="skill-chip">Generative AI</div>
+                        <div class="skill-chip">Computer Vision</div>
+                        <div class="skill-chip">Data Preprocessing</div>
+                        <div class="skill-chip">Model Optimization</div>
+                        <div class="skill-chip">Sequence Modeling</div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-icon"><i class="fas fa-users"></i></div>
+                    <h3>Soft Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-chip soft">Problem-solving</div>
+                        <div class="skill-chip soft">Teamwork</div>
+                        <div class="skill-chip soft">Communication</div>
+                        <div class="skill-chip soft">Time Management</div>
+                        <div class="skill-chip soft">Adaptability</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;education&gt;</span>
+                <h2 class="section-title">Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-card reveal">
+                <div class="edu-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="edu-content">
+                    <h3>Bachelor's Degree in Computer Science & Artificial Intelligence</h3>
+                    <h4>Pharos University in Alexandria</h4>
+                    <div class="edu-meta">
+                        <span><i class="fas fa-calendar"></i> 2022 – 2026</span>
+                        <span><i class="fas fa-chart-line"></i> Grade: Very Good</span>
+                        <span><i class="fas fa-hourglass-half"></i> Expected Graduation: 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content reveal">
+                <p class="contact-text">
+                    I'm currently looking for entry-level opportunities in AI & NLP.
+                    Whether you have a question or just want to say hi, feel free to reach out!
+                </p>
+                <div class="contact-cards">
+                    <a href="mailto:ahmedabdelgwa135@gmail.com" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">ahmedabdelgwa135@gmail.com</span>
+                    </a>
+                    <a href="tel:+201009780937" class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <span class="contact-label">Phone</span>
+                        <span class="contact-value">+20 100 978 0937</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmed--abdelgwad" target="_blank" class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">ahmed--abdelgwad</span>
+                    </a>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="contact-label">Location</span>
+                        <span class="contact-value">Alexandria, Egypt</span>
+                    </div>
+                </div>
+                <a href="mailto:ahmedabdelgwa135@gmail.com" class="btn btn-primary btn-lg">
+                    <span>Say Hello</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>Ahmed<span class="logo-dot">.</span>AI<span
+                        class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-text">Designed & Built by Ahmed Abdelgwad</p>
+                <div class="footer-socials">
+                    <a href="mailto:ahmedabdelgwa135@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/ahmed--abdelgwad" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p class="footer-copy">&copy; 2026 Ahmed Abdelgwad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
