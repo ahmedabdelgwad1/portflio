@@ -1,0 +1,68 @@
+{
+  "personal_info": {
+    "name": "Ahmed Abdelgwad",
+    "title": "NLP & AI Engineer",
+    "location": "Alexandria, Egypt",
+    "email": "ahmedabdelgwa135@gmail.com",
+    "phone": "+201009780937",
+    "linkedin": "linkedin.com/in/ahmed--abdelgwad",
+    "languages": {
+      "Arabic": "Native",
+      "English": "B2 (Professional Working Proficiency)"
+    }
+  },
+  "education": {
+    "university": "Pharos University in Alexandria",
+    "degree": "Bachelor of Computer Science and Artificial Intelligence",
+    "graduation_year": "Expected 2026",
+    "current_grade": "Very Good"
+  },
+  "professional_training": [
+    {
+      "program": "Digital Egypt Pioneers Initiative (DEPI)",
+      "track": "Generative AI Professional Track",
+      "period": "Nov 2025 - Present",
+      "focus": ["LLMs", "RAG Systems", "GANs", "Attention Models", "Transfer Learning", "Hugging Face Integration"]
+    }
+  ],
+  "technical_skills": {
+    "languages": ["Python", "C++", "Java"],
+    "ai_nlp": ["Large Language Models (LLMs)", "Retrieval-Augmented Generation (RAG)", "Transformers (BERT, T5, GPT)", "Deep Learning", "Machine Learning"],
+    "frameworks": ["LangChain", "LangGraph", "PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "NumPy"],
+    "tools": ["Git", "GitHub", "VS Code", "Docker", "Google Colab"],
+    "specialized_areas": ["Multi-Agent Systems", "Computer Vision", "Model Optimization", "Vector Databases (ChromaDB)"]
+  },
+  "projects": [
+    {
+      "name": "Plant Disease Diagnosis Expert System",
+      "url": "https://github.com/ahmedabdelgwad1/final_plant",
+      "description": "An advanced Multi-Agent AI pipeline that diagnoses 5 types of crops (Tomato, Apple, Potato, Rice, Wheat) with 100% diagnostic reasoning.",
+      "tech_stack": ["LangGraph", "Llama 3.2 Vision", "ChromaDB", "Tavily Search API", "PlantNet API"],
+      "features": [
+        "6 Specialized Agents (Vision, Retriever, Evidence, PlantNet, Verify, Response)",
+        "Multi-modal: Analyzes leaf images using Vision LLMs",
+        "RAG: Matches symptoms against a vector database",
+        "External Validation: Cross-checks with web search and specialized APIs"
+      ]
+    },
+    {
+      "name": "Interactive AI Tourist Robot (RoboMuse - Graduation Project)",
+      "url": "https://github.com/ahmedabdelgwad1/rag/tree/new-rag",
+      "description": "An autonomous museum guide designed to provide high-accuracy, context-aware information to visitors using AI.",
+      "tech_stack": ["LLMs", "RAG", "NLP", "Computer Vision", "Robotics"],
+      "role": "Led the AI module development, focusing on RAG integration for real-time interaction."
+    },
+    {
+      "name": "RAG-based Question Answering System",
+      "url": "https://github.com/ahmedabdelgwad1/ragqa",
+      "description": "A high-performance QA system that processes documents to provide contextually accurate answers.",
+      "tech_stack": ["Google Gemini API", "LangChain", "ChromaDB", "Transformers"],
+      "core_function": "Optimizing vector data retrieval and context window management."
+    }
+  ],
+  "capabilities_for_clients": {
+    "can_build_rag": "Yes, Ahmed is a specialist. He has built single-agent and multi-agent RAG systems.",
+    "can_build_chatbots": "Yes, focusing on LLM-powered bots with external tool integration (Tavily, PlantNet).",
+    "generative_ai_expertise": "Expertise gained through DEPI professional track, focusing on modern architectures like Transformers."
+  }
+}

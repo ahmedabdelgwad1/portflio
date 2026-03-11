@@ -585,6 +585,69 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- ═══════════════════════════════════════
+         AI PORTFOLIO ASSISTANT CHAT WIDGET
+         ═══════════════════════════════════════ -->
+
+    <!-- Floating Chat Bubble -->
+    <button class="ai-chat-bubble" id="aiChatBubble" aria-label="Open AI Chat">
+        <span class="bubble-icon bubble-icon--default"><i class="fas fa-robot"></i></span>
+        <span class="bubble-icon bubble-icon--close"><i class="fas fa-times"></i></span>
+        <span class="bubble-ping"></span>
+    </button>
+
+    <!-- Chat Window -->
+    <div class="ai-chat-window" id="aiChatWindow" role="dialog" aria-label="AI Portfolio Assistant">
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="chat-header-left">
+                <div class="chat-avatar">
+                    <i class="fas fa-brain"></i>
+                    <span class="chat-status-dot"></span>
+                </div>
+                <div class="chat-header-info">
+                    <span class="chat-title">Ahmed's AI Assistant</span>
+                    <span class="chat-subtitle">Powered by Groq · LLaMA 3.3</span>
+                </div>
+            </div>
+            <button class="chat-close-btn" id="aiChatClose" aria-label="Close chat">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+
+        <!-- Messages Area -->
+        <div class="chat-messages" id="chatMessages">
+            <!-- Welcome message injected by JS -->
+        </div>
+
+        <!-- Typing Indicator -->
+        <div class="chat-typing" id="chatTyping" aria-live="polite">
+            <span class="typing-dot"></span>
+            <span class="typing-dot"></span>
+            <span class="typing-dot"></span>
+            <span class="typing-label">AI is thinking...</span>
+        </div>
+
+        <!-- Suggested Questions -->
+        <div class="chat-suggestions" id="chatSuggestions">
+            <button class="suggestion-chip" data-question="What are Ahmed's main projects?">📂 Projects</button>
+            <button class="suggestion-chip" data-question="What is Ahmed's expertise in RAG systems?">🔍 RAG
+                Skills</button>
+            <button class="suggestion-chip" data-question="Tell me about Ahmed's DEPI training">🎓 DEPI</button>
+            <button class="suggestion-chip" data-question="How can I contact Ahmed?">📧 Contact</button>
+        </div>
+
+        <!-- Input Area -->
+        <div class="chat-input-area">
+            <textarea class="chat-input" id="chatInput" placeholder="Ask me anything about Ahmed..." rows="1"
+                aria-label="Type your message"></textarea>
+            <button class="chat-send-btn" id="chatSendBtn" aria-label="Send message">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
 </body>
 
 </html>
