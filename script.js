@@ -332,9 +332,9 @@ function initChatWidget() {
         const welcome = document.createElement('div');
         welcome.className = 'chat-welcome';
         welcome.innerHTML = `
-            👋 Hi! I'm <strong>Ahmed's AI Assistant</strong>, powered by <strong>Groq LLaMA 3.3</strong>.<br><br>
+            👋 Hi! I'm <strong>Ahmed's AI Assistant</strong>.<br><br>
             Ask me anything about Ahmed's <strong>projects</strong>, <strong>RAG expertise</strong>,
-            <strong>DEPI training</strong>, or how to <strong>contact</strong> him.`;
+            or how to <strong>contact</strong> him.`;
         messagesEl.appendChild(welcome);
     }
 
